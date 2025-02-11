@@ -8,7 +8,7 @@ const Weather = () => {
 
   const getWeather = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/weather', {
+      const response = await axios.post('https://weather-1-9u4x.onrender.com/api/weather', {
         city,
         country: 'IN',  // Use default country for simplicity
       });
